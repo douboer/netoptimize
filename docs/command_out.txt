@@ -1,0 +1,730 @@
+
+###############################################################################
+display wlan statistics ap name pt-ptsldssz-ap6 connect-history 
+
+                            Connection History
+--------------------------------------------------------------------------------
+ AP Name                        : pt-ptsldssz-ap6
+ Associations                   : 7114
+ Reassociations                 : 3020
+ Failures                       : 2
+ Rejections                     : 0
+ Exceptional Deauthentication   : 765
+ Current Associations           : 1
+--------------------------------------------------------------------------------
+
+
+###############################################################################
+display wlan statistics radio ap pt-ptsldssz-ap6
+                                Radio Statistics
+--------------------------------------------------------------------------------
+ AP Name: pt-ptsldssz-ap6                       Radio Id: 1
+--------------------------------------------------------------------------------
+ Transmitted Frames Statistics:
+   Total Frames (Frames/Bytes)               : 62249083/3696729027
+   Unicast Frames (Frames/Bytes)             : 10087101/3692781651
+   Broadcast/Multicast Frames (Frames/Bytes) : 3958075 / 602336658
+   Others (Frames/Bytes)                     : 48203907/3696578014
+
+   Discarded Frames                : 34394      Failed RTS         : 180
+   Retry Count                     : 3278408    Successful RTS     : 621
+   Multiple Retry Count            : 1868912    Failed ACK         : 5510773
+   Authentication Frames           : 11728      Association Frames : 10449
+
+   Packet Statistics Based on Size:
+     Smaller than or equal to 128            : 9707249
+     Between 128 and 512 (inclusive)         : 8077820
+     Between 512 and 1024 (inclusive)        : 494856
+     Larger than 1024                        : 8281696
+
+   Packet Statistics Based on Rate:
+         1 Mbps                    : 6146487             2 Mbps    : 0
+       5.5 Mbps                    : 0                   6 Mbps    : 0
+         9 Mbps                    : 0                  11 Mbps    : 16448593
+        12 Mbps                    : 65                 18 Mbps    : 333
+        24 Mbps                    : 386                36 Mbps    : 442
+        48 Mbps                    : 733                54 Mbps    : 7658
+
+   Packet Statistics Based on 802.11n Rate:
+       6.5 Mbps                    : 230198             13 Mbps    : 112245
+      13.5 Mbps                    : 0                  15 Mbps    : 0
+      19.5 Mbps                    : 288870             26 Mbps    : 87301
+        27 Mbps                    : 0                  30 Mbps    : 0
+        39 Mbps                    : 483092           40.5 Mbps    : 0
+        45 Mbps                    : 0                  52 Mbps    : 510887
+        54 Mbps                    : 0                58.5 Mbps    : 285145
+        60 Mbps                    : 0                  65 Mbps    : 2752820
+      72.2 Mbps                    : 0                  78 Mbps    : 0
+        81 Mbps                    : 0                  90 Mbps    : 0
+       104 Mbps                    : 0                 108 Mbps    : 0
+       117 Mbps                    : 0                 120 Mbps    : 0
+     121.5 Mbps                    : 0                 130 Mbps    : 0
+       135 Mbps                    : 0               144.4 Mbps    : 0
+       150 Mbps                    : 0                 156 Mbps    : 0
+       162 Mbps                    : 0               173.3 Mbps    : 0
+     175.5 Mbps                    : 0                 180 Mbps    : 0
+       195 Mbps                    : 0                 216 Mbps    : 0
+     216.7 Mbps                    : 0                 240 Mbps    : 0
+       243 Mbps                    : 0                 270 Mbps    : 0
+       300 Mbps                    : 0                 324 Mbps    : 0
+       360 Mbps                    : 0               364.5 Mbps    : 0
+       405 Mbps                    : 0                 450 Mbps    : 0
+--------------------------------------------------------------------------------
+ Received Frames Statistics:
+   Total Frames (Frames/Bytes)               : 13276195/2391757246
+   Unicast Frames (Frames/Bytes)             : 8900900/1862221075
+   Broadcast/Multicast Frames (Frames/Bytes) : 4375295/529536171
+
+   Fragmented Frames               : 0          Duplicate Frames   : 416
+   FCS Failures                    : 66517096   Decryption Errors  : 2292
+   Authentication Frames           : 11728      Association Frames : 10449
+
+   Packet Statistics Based on Size:
+     Smaller than or equal to 128            : 10513451
+     Between 128 and 512 (inclusive)         : 1516032
+     Between 512 and 1024 (inclusive)        : 229117
+     Larger than 1024                        : 761856
+
+   Packet Statistics Based on Rate:
+         1 Mbps                    : 3889473             2 Mbps    : 2331
+       5.5 Mbps                    : 2732                6 Mbps    : 111452
+         9 Mbps                    : 5                  11 Mbps    : 77735
+        12 Mbps                    : 2563               18 Mbps    : 2311
+        24 Mbps                    : 2910               36 Mbps    : 3707
+        48 Mbps                    : 3697               54 Mbps    : 9344
+
+   Packet Statistics Based on 802.11n Rate:
+       6.5 Mbps                    : 611201             13 Mbps    : 376336
+      13.5 Mbps                    : 0                  15 Mbps    : 0
+      19.5 Mbps                    : 355324             26 Mbps    : 831530
+        27 Mbps                    : 0                  30 Mbps    : 0
+        39 Mbps                    : 1333976          40.5 Mbps    : 0
+        45 Mbps                    : 0                  52 Mbps    : 375395
+        54 Mbps                    : 454              58.5 Mbps    : 1271232
+        60 Mbps                    : 0                  65 Mbps    : 2677545
+      72.2 Mbps                    : 0                  78 Mbps    : 0
+        81 Mbps                    : 0                  90 Mbps    : 0
+       104 Mbps                    : 0                 108 Mbps    : 0
+       117 Mbps                    : 0                 120 Mbps    : 0
+     121.5 Mbps                    : 0                 130 Mbps    : 0
+       135 Mbps                    : 0               144.4 Mbps    : 0
+       150 Mbps                    : 0                 156 Mbps    : 0
+       162 Mbps                    : 0               173.3 Mbps    : 0
+     175.5 Mbps                    : 0                 180 Mbps    : 0
+       195 Mbps                    : 0                 216 Mbps    : 0
+     216.7 Mbps                    : 0                 240 Mbps    : 0
+       243 Mbps                    : 0                 270 Mbps    : 0
+       300 Mbps                    : 0                 324 Mbps    : 0
+       360 Mbps                    : 0               364.5 Mbps    : 0
+       405 Mbps                    : 0                 450 Mbps    : 0
+--------------------------------------------------------------------------------
+
+
+###############################################################################
+display wlan statistics client mac-address 0012-fe9f-a7b3
+
+                               Client Statistics
+-------------------------------------------------------------------------------
+ AP Name                           : pt-gsjdbscbgl-1f1
+ Radio Id                          : 1
+ SSID                              : ChinaNet
+ BSSID                             : c4ca-d99b-1900
+ MAC Address                       : 0012-fe9f-a7b3
+ RSSI                              : 16
+-------------------------------------------------------------------------------
+ Transmitted Frames:
+ Back Ground (Frames/Bytes)        : 0/0
+ Best Effort (Frames/Bytes)        : 69/16516
+ Video (Frames/Bytes)              : 0/0
+ Voice (Frames/Bytes)              : 2/95
+ Received Frames:
+ Back Ground (Frames/Bytes)        : 0/0
+ Best Effort (Frames/Bytes)        : 147/15022
+ Video (Frames/Bytes)              : 0/0
+ Voice (Frames/Bytes)              : 2/86
+ Discarded Frames:
+ Back Ground (Frames/Bytes)        : 0/0
+ Best Effort (Frames/Bytes)        : 3/500
+ Video (Frames/Bytes)              : 0/0
+ Voice (Frames/Bytes)              : 0/0
+-------------------------------------------------------------------------------
+
+
+###############################################################################
+display wlan ap-model name WA2620X-AGNP
+
+             AP Model : WA2620X-AGNP
+---------------------------------------------------
+ Vendor Name : H3C
+ Vendor ID   : -NA-
+ Radio Count : 2
+---------------------------------------------------
+ Radio1 :
+  Mode         : 802.11a/n
+  Default Mode : 802.11n
+  BSS Count    : 16
+
+ Radio2 :
+  Mode         : 802.11b/g/n
+  Default Mode : 802.11n
+  BSS Count    : 16
+---------------------------------------------------
+ Version Support List :
+  Hardware Version Ver.A :
+   Software Version : V100R001B96D027
+   Image Name       : WA2600_fit.bin
+---------------------------------------------------
+
+
+###############################################################################
+display wlan ap  name pt-ptsldssz-ap6 address 
+
+                                  AP Address
+-------------------------------------------------------------------------------
+ AP Name                          IP Address                     MAC Address
+-------------------------------------------------------------------------------
+ pt-ptsldssz-ap6                  10.151.6.202                   c4ca-d987-8380
+-------------------------------------------------------------------------------
+
+###############################################################################
+display wlan ap name pt-ptsldssz-ap6 radio 
+                                  AP Radio
+-------------------------------------------------------------------------------
+ AP Name                          Radio ID        Channel        Tx Power (dBm)
+-------------------------------------------------------------------------------
+ pt-ptsldssz-ap6                  1               11             27
+-------------------------------------------------------------------------------
+
+###############################################################################
+display wlan ap name pt-ptsldssz-ap6 verbos 
+                         AP Profile: pt-ptsldssz-ap6
+-------------------------------------------------------------------------------
+ APID                          : 20
+ AP System Name                : Not Configured
+ Map Configuration             : Not Configured
+ State                         : Run
+ Up Time(hh:mm:ss)             : 55 Days, 10:07:31
+
+ Model                         : WA2610E-GNP
+ Serial-ID                     : 210235A0D4C11A023073
+ IP Address                    : 10.151.6.202
+
+ H/W Version                   : Ver.A
+ S/W Version                   : V100R001B96D027
+ Boot-Rom Version              : 1.25
+ Description                   : 普陀普陀山雷迪森山庄ap6
+
+
+ Connection Type               : Master
+ Peer AC MAC Address           : c4ca-d930-8efc
+ Priority Level                : 7
+ Echo Interval(s)              : 10
+ Statistics report Interval(s) : 50
+                
+ Cir(Kbps)                     : -NA-
+ Cbs(Bytes)                    : -NA-
+
+ Jumboframe Threshold          : Disable
+
+ Transmitted control packets   : 2041285
+ Received control packets      : 2041165
+ Transmitted data packets      : 29309605
+ Received data packets         : 9471430
+
+ Configuration Failure Count   : 0
+ Last Failure Reason           :
+
+ Last Reboot Reason            : Tunnel Initiated
+
+ Latest IP Address             : 10.151.6.202
+ Tunnel Down Reason            : No Reason
+ Connection Count              : 1
+-------------------------------------------------------------------------------
+ AP Mode                       : Split
+ AP operation mode             : Normal
+ Portal Service                : Disable
+ Device Detection              : Disable
+ Maximum Number of Radios      : 1
+ Current Number of Radios      : 1
+ Client Keep-alive Interval    : Disable
+ Client Idle Interval(s)       : 3600
+ Broadcast-probe Reply Status  : Enable
+ Radio 1:
+   Basic BSSID                 : c4ca-d987-8380
+   Current BSS Count           : 2
+   Running Clients Count       : 1
+   Wireless Mode               : 11gn
+   Client Dot11n-only          : Disabled
+   Channel Band-width          : 20MHz
+   Secondary Channel Offset    : SCN
+   HT Protection Mode          : no protection
+   Short GI for 20MHz          : Not supported
+   Short GI for 40MHz          : Supported
+   Mandatory MCS Set           :
+   Support MCS Set             : 0, 1, 2, 3, 4, 5, 6, 7
+   A-MSDU                      : Enabled
+   A-MPDU                      : Enabled
+   Configured Channel          : 11
+   Configured Power (dBm)      : 27
+   Interference (%)            : -NA-
+   Channel Load (%)            : -NA-
+   Utilization (%)             : -NA-
+   Co-channel Neighbor Count   : -NA-
+   Channel Health              : -NA-
+   Preamble Type               : short
+   Radio Policy                : default_rp
+   Service Template            : 1
+     SSID                      : ChinaNet
+     Port                      : WLAN-DBSS1:731
+   Service Template            : 2
+     SSID                      : ChinaNet-PuTuo
+     Port                      : WLAN-DBSS2:732
+   Mesh Policy                 : default_mp_plcy
+   ANI Support                 : Enable
+   11g Protection              : Disable
+   Admin State                 : UP
+   Physical State              : UP
+   Operational Rates (Mbps):
+     11                        : mandatory
+     12                        : supported
+     18                        : supported
+     24                        : supported
+     36                        : supported
+     48                        : supported
+     54                        : supported
+   Radar detected Channels     : None
+   Antenna Type                : User-Default external antenna
+   Resource Using Ratio (%)    : 0
+   Noise Floor (dBm)           : -115
+-------------------------------------------------------------------------------
+
+
+###############################################################################
+display wlan ap  name  pt-ptsldssz-ap6 rrm-status 
+
+                         AP RRM Profile : pt-ptsldssz-ap6
+-------------------------------------------------------------------------------
+ Radio   : 1                              Basic BSSID    : c4ca-d987-8380
+ Channel : 11                             Tx Power (dBm) : 27
+-------------------------------------------------------------------------------
+
+###############################################################################
+display wlan ap all
+
+ Total Number of APs configured           : 876
+ Total Number of configured APs connected : 861
+ Total Number of auto APs connected       : 0
+                                  AP Profiles
+ State : I = Idle,   J = Join, JA = JoinAck,   IL = ImageLoad
+         C = Config, R = Run,  KU = KeyUpdate, KC = KeyCfm
+--------------------------------------------------------------------------------
+ AP Name                          State Model              Serial-ID
+--------------------------------------------------------------------------------
+ pt-ptszxjbg1f-ap1                R/M   WA2610E-GNP        210235A0D4C11C006214
+ pt-ptszxjbg1f-ap2                R/M   WA2610E-GNP        210235A0D4C11B003261
+ pt-ptszxjbg1f-ap3                R/M   WA2610E-GNP        210235A0D4C11C006235
+ pt-ptszxjbg2f-ap1                R/M   WA2610E-GNP        210235A0D4C11B003083
+ pt-ptszxjbg2f-ap2                R/M   WA2610E-GNP        210235A0D4C11B003323
+ pt-ptszxjbg3f-ap1                R/M   WA2610E-GNP        210235A0D4C11B003305
+ pt-ptszxjbg3f-ap2                R/M   WA2610E-GNP        210235A0D4C11B003218
+ pt-ptsplbg1f-ap1                 R/M   WA2610E-GNP        210235A0D4C11B003139
+ pt-ptsplbg1f-ap2                 R/M   WA2610E-GNP        210235A0D4C11B003308
+ pt-ptsplbg2f-ap1                 R/M   WA2610E-GNP        219801A0CSC123009578
+ pt-ptsplbg2f-ap2                 R/M   WA2610E-GNP        210235A0D4C11B003312
+ pt-ptsplbg2f-ap3                 R/M   WA2610E-GNP        210235A0D4C11B003283
+ pt-ptsplbg3f-ap1                 R/M   WA2610E-GNP        210235A0D4C11B003296
+ pt-ptsplbg3f-ap2                 R/M   WA2610E-GNP        210235A0D4C11B003150
+ pt-ptsldssz-ap1                  R/M   WA2610E-GNP        210235A0D4C11B003112
+ pt-ptsldssz-ap2                  R/M   WA2610E-GNP        210235A0D4C11C005218
+ pt-ptsldssz-ap3                  R/M   WA2610E-GNP        210235A0D4C11C005398
+ pt-ptsldssz-ap4                  R/M   WA2610E-GNP        210235A0D4C11A023095
+ pt-ptsldssz-ap5                  R/M   WA2610E-GNP        210235A0D4C11C005228
+ pt-ptsldssz-ap6                  R/M   WA2610E-GNP        210235A0D4C11A023073
+ pt-ptsldssz-ap7                  R/M   WA2610E-GNP        210235A0D4C11C005295
+ pt-ptsldssz-ap8                  R/M   WA2610E-GNP        210235A0D4C11C006247
+ pt-ptsldssz-ap9                  R/M   WA2610E-GNP        210235A0D4C11C003991
+ pt-ptsldssz-ap10                 R/M   WA2610E-GNP        210235A0D4C11B003319
+
+
+###############################################################################
+display wlan ap  name  pt-ptsldssz-ap6 rrm-status 
+
+                         AP RRM Profile : pt-ptsldssz-ap6
+-------------------------------------------------------------------------------
+ Radio   : 1                              Basic BSSID    : c4ca-d987-8380
+ Channel : 11                             Tx Power (dBm) : 27
+-------------------------------------------------------------------------------
+<AC-ZS-78-M>display wlan ap  name  pt-ptsldssz-ap6 ?          
+  address      AP address information
+  radio        Radio information
+  rrm-history  RRM history information
+  rrm-status   RRM status information
+  verbose      Verbose information
+  |            Matching output
+  <cr>         
+<AC-ZS-78-M>display wlan ap  name  pt-ptsldssz-ap6 ver
+<AC-ZS-78-M>display wlan ap  name pt-ptsldssz-ap6 verbose 
+                         AP Profile: pt-ptsldssz-ap6
+-------------------------------------------------------------------------------
+ APID                          : 20
+ AP System Name                : Not Configured
+ Map Configuration             : Not Configured
+ State                         : Run
+ Up Time(hh:mm:ss)             : 55 Days, 09:56:36
+
+ Model                         : WA2610E-GNP
+ Serial-ID                     : 210235A0D4C11A023073
+ IP Address                    : 10.151.6.202
+
+ H/W Version                   : Ver.A
+ S/W Version                   : V100R001B96D027
+ Boot-Rom Version              : 1.25
+ Description                   : 普陀普陀山雷迪森山庄ap6
+
+
+ Connection Type               : Master
+ Peer AC MAC Address           : c4ca-d930-8efc
+ Priority Level                : 7
+ Echo Interval(s)              : 10
+ Statistics report Interval(s) : 50
+                
+ Cir(Kbps)                     : -NA-
+ Cbs(Bytes)                    : -NA-
+
+ Jumboframe Threshold          : Disable
+
+ Transmitted control packets   : 2040990
+ Received control packets      : 2040871
+ Transmitted data packets      : 29309430
+ Received data packets         : 9471237
+
+ Configuration Failure Count   : 0
+ Last Failure Reason           :
+
+ Last Reboot Reason            : Tunnel Initiated
+
+ Latest IP Address             : 10.151.6.202
+ Tunnel Down Reason            : No Reason
+ Connection Count              : 1
+-------------------------------------------------------------------------------
+ AP Mode                       : Split
+ AP operation mode             : Normal
+ Portal Service                : Disable
+ Device Detection              : Disable
+ Maximum Number of Radios      : 1
+ Current Number of Radios      : 1
+ Client Keep-alive Interval    : Disable
+ Client Idle Interval(s)       : 3600
+ Broadcast-probe Reply Status  : Enable
+ Radio 1:
+   Basic BSSID                 : c4ca-d987-8380
+   Current BSS Count           : 2
+   Running Clients Count       : 1
+   Wireless Mode               : 11gn
+   Client Dot11n-only          : Disabled
+   Channel Band-width          : 20MHz
+   Secondary Channel Offset    : SCN
+   HT Protection Mode          : no protection
+   Short GI for 20MHz          : Not supported
+   Short GI for 40MHz          : Supported
+   Mandatory MCS Set           :
+   Support MCS Set             : 0, 1, 2, 3, 4, 5, 6, 7
+   A-MSDU                      : Enabled
+   A-MPDU                      : Enabled
+   Configured Channel          : 11
+   Configured Power (dBm)      : 27
+   Interference (%)            : -NA-
+   Channel Load (%)            : -NA-
+   Utilization (%)             : -NA-
+   Co-channel Neighbor Count   : -NA-
+   Channel Health              : -NA-
+   Preamble Type               : short
+   Radio Policy                : default_rp
+   Service Template            : 1
+     SSID                      : ChinaNet
+     Port                      : WLAN-DBSS1:731
+   Service Template            : 2
+     SSID                      : ChinaNet-PuTuo
+     Port                      : WLAN-DBSS2:732
+   Mesh Policy                 : default_mp_plcy
+   ANI Support                 : Enable
+   11g Protection              : Disable
+   Admin State                 : UP
+   Physical State              : UP
+   Operational Rates (Mbps):
+     11                        : mandatory
+     12                        : supported
+     18                        : supported
+     24                        : supported
+     36                        : supported
+     48                        : supported
+     54                        : supported
+   Radar detected Channels     : None
+   Antenna Type                : User-Default external antenna
+   Resource Using Ratio (%)    : 0
+   Noise Floor (dBm)           : -114
+-------------------------------------------------------------------------------
+
+###############################################################################
+display wlan client[  ap  ap-name[  radio  radio-number] |  mac-address  mac-address| 
+service-template service-template-number] [ verbose] 
+
+display wlan client mac-address 0003-7f81-18a5 verbose 
+
+ Total Number of Clients           : 1
+                              Client Information
+-------------------------------------------------------------------------------
+ MAC Address                       : 0003-7f81-18a5
+ User Name                         : -NA-
+ AID                               : 126
+ AP Name                           : pt-dglzkft2f
+ Radio Id                          : 1
+ SSID                              : ChinaNet-PuTuo
+ BSSID                             : 5866-ba75-27e1
+ Port                              : WLAN-DBSS2:6504
+ VLAN                              : 3001
+ State                             : Running
+ Power Save Mode                   : Sleep
+ Wireless Mode                     : 11gn
+ Channel Band-width                : 20MHz
+ SM Power Save Enable              : Enabled
+ SM Power Save Mode                : Static
+ Short GI for 20MHz                : Supported
+ Short GI for 40MHz                : Not Supported
+ Support MCS Set                   : 0,1,2,3,4,5,6,7
+ BLOCK ACK-TID 0                   : BOTH
+ QoS Mode                          : WMM
+ Listen Interval (Beacon Interval) : 4
+ RSSI                              : 22
+ Rx/Tx Rate                        : 26/52
+ Client Type                       : PRE-RSNA
+ Authentication Method             : Open System
+ Authentication Mode               : Central
+ AKM Method                        : None
+ 4-Way Handshake State             : -NA-
+ Group Key State                   : -NA-
+ Encryption Cipher                 : Clear
+ Roam Status                       : Intra-AC roam association
+ Roam Count                        : 5
+ Up Time (hh:mm:ss)                : 00:44:54
+-------------------------------------------------------------------------------
+
+###############################################################################
+display wlan client ap pt-dglzkft2f verbose 
+ Total Number of Clients           : 3
+                              Client Information
+-------------------------------------------------------------------------------
+ MAC Address                       : 5032-7589-21d4
+ User Name                         : -NA-
+ AID                               : 1
+ AP Name                           : pt-dglzkft2f
+ Radio Id                          : 1
+ SSID                              : ChinaNet
+ BSSID                             : 5866-ba75-27e0
+ Port                              : WLAN-DBSS1:6493
+ VLAN                              : 1171
+ State                             : Running
+ Power Save Mode                   : Sleep
+ Wireless Mode                     : 11gn
+ Channel Band-width                : 20MHz
+ SM Power Save Enable              : Disabled
+ Short GI for 20MHz                : Supported
+ Short GI for 40MHz                : Not Supported
+ Support MCS Set                   : 0,1,2,3,4,5,6,7
+ BLOCK ACK-TID 0                   : IN
+ QoS Mode                          : WMM
+ Listen Interval (Beacon Interval) : 10
+ RSSI                              : 7
+ Rx/Tx Rate                        : 19.5/72.2
+ Client Type                       : PRE-RSNA
+ Authentication Method             : Open System
+ Authentication Mode               : Central
+ AKM Method                        : None
+ 4-Way Handshake State             : -NA-
+ Group Key State                   : -NA-
+ Encryption Cipher                 : Clear
+ Roam Status                       : Normal
+ Roam Count                        : 0
+ Up Time (hh:mm:ss)                : 00:48:53
+-------------------------------------------------------------------------------
+
+                              Client Information
+-------------------------------------------------------------------------------
+ MAC Address                       : a8fa-d894-d8a9
+ User Name                         : -NA-
+ AID                               : 127
+ AP Name                           : pt-dglzkft2f
+ Radio Id                          : 1
+ SSID                              : ChinaNet-PuTuo
+ BSSID                             : 5866-ba75-27e1
+ Port                              : WLAN-DBSS2:6504
+ VLAN                              : 3001
+ State                             : Running
+ Power Save Mode                   : Sleep
+ Wireless Mode                     : 11gn
+ Channel Band-width                : 20MHz
+ SM Power Save Enable              : Disabled
+ Short GI for 20MHz                : Not Supported
+ Short GI for 40MHz                : Not Supported
+ Support MCS Set                   : 0,1,2,3,4,5,6,7
+ BLOCK ACK-TID 0                   : BOTH
+ QoS Mode                          : WMM
+ Listen Interval (Beacon Interval) : 10
+ RSSI                              : 23
+ Rx/Tx Rate                        : 52/65
+ Client Type                       : PRE-RSNA
+ Authentication Method             : Open System
+ Authentication Mode               : Central
+ AKM Method                        : None
+ 4-Way Handshake State             : -NA-
+ Group Key State                   : -NA-
+ Encryption Cipher                 : Clear
+ Roam Status                       : Intra-AC roam association
+ Roam Count                        : 2
+ Up Time (hh:mm:ss)                : 00:06:55
+-------------------------------------------------------------------------------
+
+                              Client Information
+-------------------------------------------------------------------------------
+ MAC Address                       : b065-bdda-f74b
+ User Name                         : -NA-
+ AID                               : 126
+ AP Name                           : pt-dglzkft2f
+ Radio Id                          : 1
+ SSID                              : ChinaNet-PuTuo
+ BSSID                             : 5866-ba75-27e1
+ Port                              : WLAN-DBSS2:6504
+ VLAN                              : 3001
+ State                             : Running
+ Power Save Mode                   : Sleep
+ Wireless Mode                     : 11gn
+ Channel Band-width                : 20MHz
+ SM Power Save Enable              : Enabled
+ SM Power Save Mode                : Static
+ Short GI for 20MHz                : Not Supported
+ Short GI for 40MHz                : Not Supported
+ Support MCS Set                   : 0,1,2,3,4,5,6,7
+ BLOCK ACK-TID 0                   : BOTH
+ QoS Mode                          : WMM
+ Listen Interval (Beacon Interval) : 15
+ RSSI                              : 19
+ Rx/Tx Rate                        : 19.5/52
+ Client Type                       : PRE-RSNA
+ Authentication Method             : Open System
+ Authentication Mode               : Central
+ AKM Method                        : None
+ 4-Way Handshake State             : -NA-
+ Group Key State                   : -NA-
+ Encryption Cipher                 : Clear
+ Roam Status                       : Intra-AC roam association
+ Roam Count                        : 4
+ Up Time (hh:mm:ss)                : 00:01:14
+-------------------------------------------------------------------------------
+
+###############################################################################
+<WA2610E-GNP>display ?
+  acl                     Acl status and configuration information
+  archive                 Display archive information
+  arp                     Display ARP information 
+  boot-loader             Display boot loader information
+  bootp                   BOOTstrap  Protocol 
+  channel                 Informational channel status and configuration 
+                          information
+  clipboard               Clipboard status and configuration information 
+  clock                   Clock status and configuration information
+  command-alias           Specify command alias 
+  connection              Display connection information 
+  cpu-usage               Cpu usage information
+  current-configuration   Current configuration 
+  debugging               Current setting of debugging switches 
+  device                  Display device information
+  dhcp                    Dynamic Host Configuration Protocol and BOOTP 
+                          debugging functions
+  diagnostic-information  System information for diagnosis
+  dns                     DNS status and configuration information
+  domain                  Display domain configuration 
+  dot1x                   802.1x configuration information 
+  environment             Display environment information
+  fib                     FIB status and configuration information 
+  fips                    Federal Information Processing Standards (FIPS) 140-2 
+                          module
+  ftp                     FTP client status and configuration information
+  history-command         The historical command information
+  hotkey                  Hotkey status and configuration information 
+  icmp                    ICMP information 
+  ike                     IKE status and configuration information
+  info-center             Show information center configuration and contents
+  interface               Status and configuration information for the 
+                          interface 
+  ip                      Specify IP(Internet Protocol) configuration 
+                          information 
+  ipsec                   IPSec module status or configuration information
+  ipv6                    IPv6 status and configuration information 
+  job                     Schedule a system task
+  ldap                    Display LDAP configuration information
+  local-user              Local user(s) information
+  logbuffer               Logbuffer status and configuration information
+  loopback-detection      Detect if loopback exists
+  mac-address             MAC address information
+  mac-authentication      MAC authenticate config information 
+  mac-forwarding          Ethernet link layer forwarding information 
+  mac-vlan                MAC VLAN configuration information
+  memory                  Display memory information
+  password-control        Display password-control information
+  patch                   Display patch configuration information
+  pki                     Display PKI information
+  port                    Display port information
+  port-group              Port group 
+  port-isolate            Port-isolate group information
+  port-security           Display port-security configuration 
+  public-key              Specify public-key module configuration information
+  qos                     QoS status and configuration information
+  radius                  Display RADIUS configuration information
+  saved-configuration     The saved configuration information 
+  schedule                Schedule system task
+  ssl                     Display SSL (Secure Socket Layer) configuration 
+                          information
+  startup                 Display the configuration for startup
+  stop-accounting-buffer  No response acct-stop packet buffered in local memory
+  stp                     Spanning tree protocol
+  system-failure          System failure handling method 
+  tcp                     TCP status and configuration information 
+  telnet                  TELNET status and configuration information
+  tftp                    TFTP client status and configuration information
+  this                    This view's current configuration 
+  traffic                 Traffic configuration information 
+  transceiver             Transceiver information
+  trapbuffer              Trapbuffer status and configuration information
+  udp                     UDP status and configuration information 
+  user-group              Display user group(s) configuration information
+  user-interface          Terminal user interface status and configuration 
+                          information
+  user-isolation          Specify VLAN's user-isolation characteristics
+  user-profile            User profile
+  users                   Login users status and conf 10.151.45.196iguration information
+  version                 System hardware and software version information
+  version-update-record   Version update information 
+  vlan                    VLAN configuration information
+  wlan                    WLAN configuration
+
+###############################################################################
+
+
+
+
+
+
+###############################################################################
+
+###############################################################################
+
+###############################################################################
+
+###############################################################################
+
+###############################################################################
+
+###############################################################################
+
+
+

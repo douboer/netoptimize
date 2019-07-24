@@ -1,0 +1,2 @@
+#AC编号,AC名称,AC的IP地址,备用AC的IP地址,AC供应商,AC型号,只读团体名,读写团体名,TELNET用户名,TELNET密码,EN密码,时间,备注,软件版本
+testAC,测试AC,192.168.123.223,,H3C,H3C-AC,public,private,admin,admin,,2019/7/24,,

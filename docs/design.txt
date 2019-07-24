@@ -1,0 +1,407 @@
+
+
+display wlan ap-model all
+
+AP Model : WA1208E-DG
+---------------------------------------------------
+ Vendor Name : H3C
+ Vendor ID   : -NA-
+ Radio Count : 2
+---------------------------------------------------
+ Radio1 :
+  Mode         : 802.11b/g
+  Default Mode : 802.11g
+  BSS Count    : 16
+
+ Radio2 :       
+  Mode         : 802.11b/g
+  Default Mode : 802.11g
+  BSS Count    : 16
+---------------------------------------------------
+
+ap model: --
+    radio count
+    mode
+    default mode
+
+
+realtime（通过telnet直接查询，快速响应） --
+ap:
+    mac
+    ip
+    vlan
+    model
+    wireless_mode
+    beacon interval
+
+    number client
+    rx
+    tx
+    avg rssi
+
+    Transmitted control packets   : 97782
+    Received control packets      : 97777
+    Transmitted data packets      : 8605922
+    Received data packets         : 5095718
+
+
+    radio:
+        Running Clients Count 
+        configured channel
+        configured power
+        operational rates
+        resource using ratio
+        noise floor
+
+
+
+
+client:
+    rssi
+    rx
+    tx
+
+
+statistic: --
+connection static:
+    associations:
+    reassociations:
+    failures:
+    exception deauthentication:
+
+<AC-ZS-78-M>display wlan statistics ap name pt-hzzgjgcdlmq-ap1 connect-history 
+                            Connection History
+--------------------------------------------------------------------------------
+ AP Name                        : pt-hzzgjgcdlmq-ap1
+ Associations                   : 2224
+ Reassociations                 : 878
+ Failures                       : 3
+ Rejections                     : 0
+ Exceptional Deauthentication   : 1423
+ Current Associations           : 19
+--------------------------------------------------------------------------------
+    
+
+display wlan statistics radio ap pt-ptsldssz-ap6
+                                Radio Statistics
+--------------------------------------------------------------------------------
+ AP Name: pt-ptsldssz-ap6                       Radio Id: 1
+--------------------------------------------------------------------------------
+ Transmitted Frames Statistics:
+   Total Frames (Frames/Bytes)               : 62249083/3696729027
+   Unicast Frames (Frames/Bytes)             : 10087101/3692781651
+   Broadcast/Multicast Frames (Frames/Bytes) : 3958075/602336658
+   Others (Frames/Bytes)                     : 48203907/3696578014
+
+   Discarded Frames                : 34394      Failed RTS         : 180
+   Retry Count                     : 3278408    Successful RTS     : 621
+   Multiple Retry Count            : 1868912    Failed ACK         : 5510773
+   Authentication Frames           : 11728      Association Frames : 10449
+
+   Packet Statistics Based on Size:
+     Smaller than or equal to 128            : 9707249
+     Between 128 and 512 (inclusive)         : 8077820
+     Between 512 and 1024 (inclusive)        : 494856
+     Larger than 1024                        : 8281696
+
+   Packet Statistics Based on Rate:
+         1 Mbps                    : 6146487             2 Mbps    : 0
+       5.5 Mbps                    : 0                   6 Mbps    : 0
+         9 Mbps                    : 0                  11 Mbps    : 16448593
+        12 Mbps                    : 65                 18 Mbps    : 333
+        24 Mbps                    : 386                36 Mbps    : 442
+        48 Mbps                    : 733                54 Mbps    : 7658
+
+   Packet Statistics Based on 802.11n Rate:
+       6.5 Mbps                    : 230198             13 Mbps    : 112245
+      13.5 Mbps                    : 0                  15 Mbps    : 0
+      19.5 Mbps                    : 288870             26 Mbps    : 87301
+        27 Mbps                    : 0                  30 Mbps    : 0
+        39 Mbps                    : 483092           40.5 Mbps    : 0
+        45 Mbps                    : 0                  52 Mbps    : 510887
+        54 Mbps                    : 0                58.5 Mbps    : 285145
+        60 Mbps                    : 0                  65 Mbps    : 2752820
+      72.2 Mbps                    : 0                  78 Mbps    : 0
+        81 Mbps                    : 0                  90 Mbps    : 0
+       104 Mbps                    : 0                 108 Mbps    : 0
+       117 Mbps                    : 0                 120 Mbps    : 0
+     121.5 Mbps                    : 0                 130 Mbps    : 0
+       135 Mbps                    : 0               144.4 Mbps    : 0
+       150 Mbps                    : 0                 156 Mbps    : 0
+       162 Mbps                    : 0               173.3 Mbps    : 0
+     175.5 Mbps                    : 0                 180 Mbps    : 0
+       195 Mbps                    : 0                 216 Mbps    : 0
+     216.7 Mbps                    : 0                 240 Mbps    : 0
+       243 Mbps                    : 0                 270 Mbps    : 0
+       300 Mbps                    : 0                 324 Mbps    : 0
+       360 Mbps                    : 0               364.5 Mbps    : 0
+       405 Mbps                    : 0                 450 Mbps    : 0
+--------------------------------------------------------------------------------
+ Received Frames Statistics:
+   Total Frames (Frames/Bytes)               : 13276195/2391757246
+   Unicast Frames (Frames/Bytes)             : 8900900/1862221075
+   Broadcast/Multicast Frames (Frames/Bytes) : 4375295/529536171
+
+   Fragmented Frames               : 0          Duplicate Frames   : 416
+   FCS Failures                    : 66517096   Decryption Errors  : 2292
+   Authentication Frames           : 11728      Association Frames : 10449
+
+   Packet Statistics Based on Size:
+     Smaller than or equal to 128            : 10513451
+     Between 128 and 512 (inclusive)         : 1516032
+     Between 512 and 1024 (inclusive)        : 229117
+     Larger than 1024                        : 761856
+
+   Packet Statistics Based on Rate:
+         1 Mbps                    : 3889473             2 Mbps    : 2331
+       5.5 Mbps                    : 2732                6 Mbps    : 111452
+         9 Mbps                    : 5                  11 Mbps    : 77735
+        12 Mbps                    : 2563               18 Mbps    : 2311
+        24 Mbps                    : 2910               36 Mbps    : 3707
+        48 Mbps                    : 3697               54 Mbps    : 9344
+
+   Packet Statistics Based on 802.11n Rate:
+       6.5 Mbps                    : 611201             13 Mbps    : 376336
+      13.5 Mbps                    : 0                  15 Mbps    : 0
+      19.5 Mbps                    : 355324             26 Mbps    : 831530
+        27 Mbps                    : 0                  30 Mbps    : 0
+        39 Mbps                    : 1333976          40.5 Mbps    : 0
+        45 Mbps                    : 0                  52 Mbps    : 375395
+        54 Mbps                    : 454              58.5 Mbps    : 1271232
+        60 Mbps                    : 0                  65 Mbps    : 2677545
+      72.2 Mbps                    : 0                  78 Mbps    : 0
+        81 Mbps                    : 0                  90 Mbps    : 0
+       104 Mbps                    : 0                 108 Mbps    : 0
+       117 Mbps                    : 0                 120 Mbps    : 0
+     121.5 Mbps                    : 0                 130 Mbps    : 0
+       135 Mbps                    : 0               144.4 Mbps    : 0
+       150 Mbps                    : 0                 156 Mbps    : 0
+       162 Mbps                    : 0               173.3 Mbps    : 0
+     175.5 Mbps                    : 0                 180 Mbps    : 0
+       195 Mbps                    : 0                 216 Mbps    : 0
+     216.7 Mbps                    : 0                 240 Mbps    : 0
+       243 Mbps                    : 0                 270 Mbps    : 0
+       300 Mbps                    : 0                 324 Mbps    : 0
+       360 Mbps                    : 0               364.5 Mbps    : 0
+       405 Mbps                    : 0                 450 Mbps    : 0
+--------------------------------------------------------------------------------
+
+
+
+
+
+
+
+$kpis = \{
+    "10.145.253.78" => {
+      "10.151.3.68" => {
+        "date" => "28/05/2013",
+        "time" => "17:07:51",
+        "model" => "WA2610E-GNP",
+        "assoc_hist" => "2936",
+        "reassoc_hist" => "2182",
+        "assoc_fail_hist" => "374",
+        "except_deauth_hist" => "510",
+        "priority_level" => "7",
+        "recv_ctl_pkts" => "250575",
+        "recv_data_pkts" => "2625635",
+        "tran_data_pkts" => "6433047",
+        "tran_ctl_pkts" => "251033",
+        "curr_num_radio" => "1",
+        "conn_cnt" => "12",
+        "num_client" => "2",
+        "echo_interval" => "10",
+        "client_idle_interval" => "3600",
+        "max_num_radio" => "1",
+        "numradio" => 1
+        "radio" => {
+          "1" => {
+            "num_client" => "2",
+            "avg_rx_rate" => 54,
+            "avg_tx_rate" => "11",
+            "opr_rate" => "11",
+            "wireless_mode" => "11gn",
+            "avg_rssi" => -40,
+            "power" => "27",
+            "channel_num" => "11",
+            "resource_ratio" => "2",
+            "noise_floor" => "-114",
+            "bss_cnt" => "2",
+            "ssid" => {
+              "1" => "ChinaNet",
+              "2" => "ChinaNet-PuTuo"
+            }
+            "transmit" => {
+              "total_frame" => "8548686"
+              "discard_frame" => "24261",
+              "others_frame" => "5773657",
+              "broad_multi_frame" => "1003903",
+              "unicast_frame" => "1771126",
+              "retry_cnt" => "881080",
+              "packet_rate" => {
+                "11n" => {
+                  "130" => "0",
+                  "58.5" => "33029",
+                  "90" => "0",
+                  "7" => "0",
+                  "26" => "9206",
+                  "78" => "0",
+                  "2" => "0",
+                  "324" => "0",
+                  "180" => "0",
+                  "1" => "0",
+                  "144.4" => "0",
+                  "0" => "0",
+                  "30" => "0",
+                  "13" => "9548",
+                  "65" => "99586",
+                  "240" => "0",
+                  "40.5" => "0",
+                  "120" => "0",
+                  "3" => "0",
+                  "156" => "0",
+                  "108" => "0",
+                  "9" => "18950",
+                  "173.3" => "0",
+                  "15" => "0",
+                  "52" => "23317",
+                  "4" => "0",
+                  "450" => "0",
+                  "364.5" => "0",
+                  "216" => "0",
+                  "270" => "0",
+                  "5" => "0"
+                },
+                "11g" => {
+                  "6" => "0",
+                  "11" => "7271628",
+                  "36" => "64478",
+                  "9" => "0",
+                  "2" => "40353",
+                  "8" => "16775",
+                  "1" => "287409",
+                  "4" => "47226",
+                  "18" => "39552",
+                  "54" => "1153",
+                  "5" => "0"
+                }
+              },
+              "size" => {
+                "between_512_1024" => "123442",
+                "between_128_512" => "3591344",
+                "gt_1024" => "651217",
+                "le_128" => "3422241"
+              },
+            },
+            "receive" => {
+              "broad_multi_frame" => "1963340",
+              "unicast_frame" => "2289134",
+              "total_frame" => "4252474",
+              "packet_rate" => {
+                "11n" => {
+                  "130" => "0",
+                  "58.5" => "28613",
+                  "90" => "0",
+                  "7" => "0",
+                  "26" => "73773",
+                  "78" => "0",
+                  "2" => "0",
+                  "324" => "0",
+                  "180" => "0",
+                  "1" => "0",
+                  "144.4" => "0",
+                  "0" => "0",
+                  "30" => "0",
+                  "13" => "42760",
+                  "65" => "59005",
+                  "240" => "0",
+                  "40.5" => "0",
+                  "120" => "0",
+                  "3" => "0",
+                  "156" => "0",
+                  "108" => "0",
+                  "9" => "73496",
+                  "173.3" => "0",
+                  "15" => "0",
+                  "52" => "31246",
+                  "4" => "0",
+                  "450" => "0",
+                  "364.5" => "0",
+                  "216" => "0",
+                  "270" => "0",
+                  "5" => "0"
+                },
+                "11g" => {
+                  "6" => "8782",
+                  "11" => "1314265",
+                  "36" => "1679",
+                  "9" => "84",
+                  "2" => "513",
+                  "8" => "565",
+                  "1" => "1899354",
+                  "4" => "65106",
+                  "18" => "193693",
+                  "54" => "1024",
+                  "5" => "1685"
+                }
+              },
+              "size" => {
+                "between_512_1024" => "36723",
+                "between_128_512" => "438775",
+                "le_128" => "2879679",
+                "gt_1024" => "793646"
+              }
+            },
+            "cb" => {
+              "rxbusy" => "3",
+              "time" => "17:04:03",
+              "date" => "28/05/2013",
+              "channelbusy" => "5",
+              "txbusy" => "0",
+              "channel" => "11"
+            },
+          }
+        },
+      },
+
+
+
+
+
+analizer:(for ap/ac/hot)
+    1. special date from - to,                        $datespan 
+    2. retrieve data files
+    3. special time size(),                           $timesize (default=$datespan/50 && > 30minites)
+    4. statistic the kpis in time size
+    4. show chart & statistic
+
+
+
+
+
+### schedule to execute task
+my loopstep = 60*5000;
+my addttime = 60*1000;
+while(!stop)
+{
+    if(endloop) # pre loop end, re-execute the loop
+    {
+        #execute task
+        &somethingtask();
+
+        sleep(5000*60);
+    }
+    else # waiting for the loop ending
+    {
+        sleep(1000*60);
+    }
+}
+else
+{
+    #all task done
+}
+
+
+
+
+

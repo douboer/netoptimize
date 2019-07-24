@@ -1,0 +1,100 @@
+#set term jpeg
+#set output "rates.jpeg"
+set term windows size 900,550
+#################################################################
+m=0
+n=0
+h=0
+k=0
+m1=0
+m2=0
+sum1=0
+sum2=0
+sum3=0
+sum4=0
+set grid
+#set key horiz
+set key left top
+set mxtics 4
+set mytics 2
+
+set multiplot layout 1,2
+set title "NB:上行速率"
+set xlabel "序号（sort by (tX)rxInDataRate）"
+set ylabel "流量(kbps)"
+set ytics 200
+set yrange [0:2000]
+plot \
+'ratesqz-adjusted.dat' using (n=n+1,sum2=sum2+$3,n):3:(1/15000.) t "QZ-(rX)txOutDataRate" smooth acsplines lw 1,\
+'ratesnb-adjusted.dat' every 2 using (k=k+1,sum4=sum4+$3,k):3:(1/15000.) t "NB-(rX)txOutDataRate" smooth acsplines lw 1
+#'ratesqz-adjusted.dat' using (n=n+1,sum2=sum2+$3,n):3:(1/15000.) t "QZ-(rX)txOutDataRate" smooth acsplines lw 1,\
+#                    (sum2/n) t "QZ-rXMean" w l,\
+#'ratesnb-adjusted.dat' every 2 using (k=k+1,sum4=sum4+$3,k):3:(1/15000.) t "NB-(rX)txOutDataRate" smooth acsplines lw 1,\
+#                    (sum4/k) t "NB-rXMean" w l
+
+#plot 'file' every point_incr:block_incr:start_point:start_block:end_point:end_block
+
+set title "NB:下行速率"
+set ytics 1000
+set yrange [0:10000]
+plot \
+'ratesqz-adjusted.dat' using (m=m+1,sum1=sum1+$4,m):4:(1/15000.) t "QZ-(tX)txInDataRate" smooth acsplines lw 1,\
+'ratesnb-adjusted.dat' every 2 using (h=h+1,sum3=sum3+$4,h):4:(1/15000.) t "NB-(tX)txInDataRate" smooth acsplines lw 1
+#'ratesqz-adjusted.dat' using (m=m+1,sum1=sum1+$4,m):4:(1/15000.) t "QZ-(tX)txInDataRate" smooth acsplines lw 1,\
+#                    (sum1/m) t "QZ-tXMean" w l,\
+#'ratesnb-adjusted.dat' every 2 using (h=h+1,sum3=sum3+$4,h):4:(1/15000.) t "NB-(tX)txInDataRate" smooth acsplines lw 1,\
+#                    (sum3/h) t "NB-tXMean" w l
+unset multiplot
+reset
+pause -1 
+
+#################################################################
+set grid
+#set key horiz
+set key left top
+#set key outside
+set mxtics 4
+set mytics 2
+
+set multiplot layout 1,3
+
+set xlabel "序号（sort by (tX)rxInDataRate）"
+set ytics 0,10,80
+set yrange [0:80]
+
+m1=0
+sum1=0
+m2=0
+sum2=0
+m3=0
+sum3=0
+m4=0
+sum4=0
+m5=0
+sum5=0
+m6=0
+sum6=0
+set ylabel "channel busy(%)"
+plot \
+'ratesqz-adjusted.dat' using (m1=m1+1,sum1=sum1+$5,m1):($5):(1/15000.) t "qz channel busy" smooth acsplines lw 1,\
+                    (sum1/m1) t "QZ-channelbusy-Mean" w l,\
+'ratesnb-adjusted.dat' every 2 using (m2=m2+1,sum2=sum2+$5,m2):($5):(1/15000.) t "nb channel busy" smooth acsplines lw 1,\
+                    (sum2/m2) t "NB-channelbusy-Mean" w l
+
+set ylabel "tx busy(%)"
+plot \
+'ratesqz-adjusted.dat' using (m3=m3+1,sum3=sum3+$6,m3):($6):(1/15000.) t "qz tx busy" smooth acsplines lw 1,\
+                    (sum3/m3) t "QZ-txbusy-Mean" w l,\
+'ratesnb-adjusted.dat' every 2 using (m4=m4+1,sum4=sum4+$6,m4):($6):(1/15000.) t "nb tx busy" smooth acsplines lw 1,\
+                    (sum4/m4) t "NB-txbusy-Mean" w l
+
+set ylabel "rx busy(%)"
+plot \
+'ratesqz-adjusted.dat' using (m5=m5+1,sum5=sum5+$7,m5):($7):(1/15000.) t "qz rx busy" smooth acsplines lw 1,\
+                    (sum5/m5) t "QZ-rxbusy-Mean" w l,\
+'ratesnb-adjusted.dat' every 2 using (m6=m6+1,sum6=sum6+$7,m6):($7):(1/15000.) t "nb rx busy" smooth acsplines lw 1,\
+                    (sum6/m6) t "NB-rxbusy-Mean" w l
+unset multiplot
+reset
+#################################################################
+

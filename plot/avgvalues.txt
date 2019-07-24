@@ -1,0 +1,4 @@
+#QZ(rX)txOutDataRate	(tX)rxInDataRate	ctlbusy	txbusy	rxbusy
+132.471072	252.8264317	35.53803231	1.878414097	31.09720999
+#NB(rX)txOutDataRate	(tX)rxInDataRate	ctlbusy	txbusy	rxbusy
+101.7534738	201.8830404	40.21293825	1.179994479	33.88239625

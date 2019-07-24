@@ -1,0 +1,179 @@
+$ac = \{
+    '192.168.123.223' => {
+      'acpasswd' => 'admin',
+      'acnumber' => 'testac',
+      'acuser' => 'admin',
+      'acname' => '²âÊÔac'
+    }
+  };
+
+$ap = \{
+    '192.168.123.192' => {
+      'apseri' => '219801a0e8c14a000086',
+      'acname' => '²âÊÔac',
+      'apmac' => '70baefb0bb60',
+      'apid' => 'hz-test-0129',
+      'hotname' => 'ÍøÂç½ðÈÚ´óÏÃtest',
+      'apname' => 'ÍøÂç½ðÈÚ´óÏÃtest'
+    }
+  };
+
+$hot = \{
+    'ÍøÂç½ðÈÚ´óÏÃtest' => {
+      'hotcity' => 'º¼ÖÝÊÐ',
+      'hotac' => '»ªÈý'
+    }
+  };
+
+$telnetaps->192.168.123.223 = \{
+    '219801a0e8c14a000086' => {
+      'apid' => 'hz-test-0129'
+    },
+    '219801a0vy8162e01068' => {
+      'apid' => 'cesi2'
+    },
+    '219801a0e8c14a000122' => {
+      'apid' => 'hz-test1224'
+    }
+  };
+
+$ap = \{
+    '192.168.123.192' => {
+      'hotname' => 'ÍøÂç½ðÈÚ´óÏÃtest',
+      'apname' => 'ÍøÂç½ðÈÚ´óÏÃtest',
+      'apmac' => '70baefb0bb60',
+      'ÍøÂç½ðÈÚ´óÏÃtest' => {
+        'hotcity' => 'º¼ÖÝÊÐ',
+        'hotac' => '»ªÈý'
+      },
+      '²âÊÔac' => {
+        'acpasswd' => 'admin',
+        'acuser' => 'admin',
+        'acnumber' => 'testac',
+        'acipaddr' => '192.168.123.223'
+      },
+      'apid' => 'hz-test-0129',
+      'apseri' => '219801a0e8c14a000086',
+      'acname' => '²âÊÔac'
+    }
+  };
+
+$acap = \{
+    '192.168.123.223' => {
+      'acname' => '²âÊÔac',
+      'acuser' => 'admin',
+      'acnumber' => 'testac',
+      'acpasswd' => 'admin',
+      '192.168.123.192' => {
+        'hotname' => 'ÍøÂç½ðÈÚ´óÏÃtest',
+        'apname' => 'ÍøÂç½ðÈÚ´óÏÃtest',
+        'apmac' => '70baefb0bb60',
+        'apid' => 'hz-test-0129'
+      }
+    }
+  };
+
+$cb = \{
+    'radio' => {
+      '1' => {
+        'cb' => {
+          'date' => '24/07/2019',
+          'channel' => '06',
+          'time' => '12:51:59',
+          'txbusy' => '3',
+          'rxbusy' => '29',
+          'channelbusy' => '44'
+        }
+      },
+      '2' => {
+        'cb' => {
+          'txbusy' => 'NA',
+          'channelbusy' => 'NA',
+          'rxbusy' => 'NA',
+          'channel' => 'NA',
+          'time' => 'NA',
+          'date' => 'NA'
+        }
+      }
+    },
+    'numradio' => 1
+  };
+
+$kpis = \{
+    '192.168.123.223' => {
+      '192.168.123.192' => {
+        'radio' => {
+          '1' => {
+            'cb' => {
+              'date' => '24/07/2019',
+              'channel' => '06',
+              'time' => '12:51:59',
+              'txbusy' => 3,
+              'rxbusy' => 29,
+              'channelbusy' => 44
+            },
+            'transmit' => {},
+            'receive' => {}
+          },
+          '2' => {
+            'cb' => {
+              'txbusy' => 'NA',
+              'channelbusy' => 'NA',
+              'rxbusy' => 'NA',
+              'channel' => 'NA',
+              'time' => 'NA',
+              'date' => 'NA'
+            }
+          }
+        },
+        'numradio' => 1
+      }
+    }
+  };
+
+$ackpis = \{
+    '192.168.123.223' => {
+      'acname' => '²âÊÔac',
+      'time' => undef,
+      'cb' => {
+        'rxbusy' => '29',
+        'channelbusy' => '44',
+        'txbusy' => '3'
+      },
+      'acnumber' => 'testac',
+      'date' => undef,
+      'transmit' => {
+        'size' => {
+          'le_128' => 0
+        }
+      },
+      'receive' => {
+        'size' => {
+          'le_128' => 0
+        }
+      }
+    }
+  };
+
+$hotkpis = \{
+    'ÍøÂç½ðÈÚ´óÏÃtest' => {
+      'date' => undef,
+      'time' => undef,
+      'receive' => {
+        'size' => {
+          'le_128' => 0
+        }
+      },
+      'transmit' => {
+        'size' => {
+          'le_128' => 0
+        }
+      },
+      'cb' => {
+        'txbusy' => '3',
+        'rxbusy' => '29',
+        'channelbusy' => '44'
+      }
+    }
+  };
+

@@ -1,0 +1,97 @@
+
+******************************************************************************
+* Copyright (c) 2004-2014 Hangzhou H3C Tech. Co., Ltd. All rights reserved.  *
+* Without the owner's prior written consent,                                 *
+* no decompiling or reverse-engineering shall be allowed.                    *
+******************************************************************************
+
+
+Login authentication
+
+
+Username:admin
+Password:
+<HZ-MGS-H3C-AC>#
+<HZ-MGS-H3C-AC>#
+<HZ-MGS-H3C-AC>#
+<HZ-MGS-H3C-AC>#
+<HZ-MGS-H3C-AC>#
+<HZ-MGS-H3C-AC>
+<HZ-MGS-H3C-AC>###start processing channelbusy (acip,apip,apid):192.168.123.223,192.168.123.192,hz-test-0129###
+<HZ-MGS-H3C-AC>display wlan ap name hz-test-0129 radio
+                                  AP Radio
+-------------------------------------------------------------------------------
+ AP Name                          Radio ID        Channel        Tx Power (dBm)
+-------------------------------------------------------------------------------
+ hz-test-0129                     1               auto(6)        20
+-------------------------------------------------------------------------------
+<HZ-MGS-H3C-AC>sys
+System View: return to User View with Ctrl+Z.
+[HZ-MGS-H3C-AC]_h
+Now you enter a hidden command view for developer's testing, some commands may 
+affect operation by wrong use, please carefully use it with our engineer's 
+direction.
+[HZ-MGS-H3C-AC-hidecmd]wlan ap-execute hz-test-0129 telnet enable
+[HZ-MGS-H3C-AC-hidecmd]wlan ap-execute hz-test-0129 exec-control enable
+[HZ-MGS-H3C-AC-hidecmd]quit
+[HZ-MGS-H3C-AC]quit
+<HZ-MGS-H3C-AC>telnet 192.168.123.192
+Trying 192.168.123.192 ...
+Press CTRL+K to abort
+Connected to 192.168.123.192 ...
+******************************************************************************
+* Copyright (c) 2004-2014 Hangzhou H3C Tech. Co., Ltd. All rights reserved.  *
+* Without the owner's prior written consent,                                 *
+* no decompiling or reverse-engineering shall be allowed.                    *
+******************************************************************************
+
+<hz-test-0129>#
+<hz-test-0129>#
+<hz-test-0129>#
+<hz-test-0129>#
+<hz-test-0129>#
+<hz-test-0129>
+<hz-test-0129>sys
+System View: return to User View with Ctrl+Z.
+[hz-test-0129]_h
+Now you enter a hidden command view for developer's testing, some commands may 
+affect operation by wrong use, please carefully use it with our engineer's 
+direction.
+[hz-test-0129-hidecmd]display ar5drv 1 channelbusy
+ChannelBusy information
+ Ctl Channel:    06    Channel Band: 20M
+ Ext Channel:
+ Record Interval(s):  9
+ Date/Month/Year: 24/07/2019
+       Time(h/m/s):   CtlBusy(%) TxBusy(%)  RxBusy(%)  ExtBusy(%)
+ 01     12:51:59         44          3         29          0
+ 02     12:51:50         49          2         39          0
+ 03     12:51:41         53          3         43          0
+ 04     12:51:32         57          3         46          0
+ 05     12:51:23         50          3         41          0
+ 06     12:51:14         47          2         39          0
+ 07     12:51:05         51          3         39          0
+ 08     12:50:56         43          2         33          0
+ 09     12:50:47         45          3         34          0
+ 10     12:50:38         45          3         33          0
+ 11     12:50:29         35          2         27          0
+ 12     12:50:21         37          2         24          0
+ 13     12:50:12         42          2         22          0
+ 14     12:50:03         47          3         27          0
+ 15     12:49:53         46          2         37          0
+ 16     12:49:44         46          2         38          0
+ 17     12:49:35         49          3         38          0
+  ---- More ----[16D                [16D 18     12:49:26         47          2         38          0
+ 19     12:49:17         48          2         40          0
+ 20     12:49:08         48          2         40          0
+[hz-test-0129-hidecmd]    
+[hz-test-0129-hidecmd]display ar5drv 2 channelbusy
+                                     ^
+ % Wrong parameter found at '^' position.
+[hz-test-0129-hidecmd]     
+[hz-test-0129-hidecmd]###stop processing channelbusy (acip,apip,apid):192.168.123.223,192.168.123.192,hz-test-0129###
+[hz-test-0129-hidecmd]quit
+[hz-test-0129]quit
+<hz-test-0129>quit
+The connection was closed by the remote host!
+<HZ-MGS-H3C-AC>quit
